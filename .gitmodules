@@ -1,0 +1,7 @@
+[submodule "src"]
+	path = src
+	url =https://github.com/shoveint/ShoveJava.git
+
+[submodule "libbar"]
+	path = include/bar
+	url = git://bar.com/git/lib.git
