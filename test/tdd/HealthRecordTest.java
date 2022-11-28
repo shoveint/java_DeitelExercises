@@ -7,16 +7,24 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class HealthRecordTest {
+    public static void main(String[] args) {
+
+    }
     HealthRecord healthRecord;
 
        // private tdd.HealthRecord;
         @BeforeEach
         void startAllTestWith(){
-            healthRecord = new HealthRecord();
+            String lastName = assertNotNull(healthRecord);
+            healthRecord = new HealthRecord(lastName);
 
         }
 
-        @Test
+    private String assertNotNull(HealthRecord healthRecord) {
+            return healthRecord.getLastName();
+    }
+
+    @Test
         void getFirstName () {
                 assertNotNull(healthRecord);
 
@@ -24,47 +32,85 @@ public class HealthRecordTest {
 
         @Test
         void setMonthOfBirth () {
-                assertEquals(12, 100);
+                assertEquals((short) 12);
         }
 
         @Test
         void getMonthOfBirth () {
-        assertEquals(1, 12);
+        assertEquals((short) 12);
         }
 
         @Test
         void setDayOfBirth () {
-            assertEquals(1, 31);
+            assertEquals((short) 31);
         }
 
         @Test
         void getDayOfBirth () {
-            assertEquals(1, 30);
+            assertEquals((short) 30);
         }
 
         @Test
         void setYearOfBirth () {
-            assertEquals(1000, 3000);
+            assertEquals((short) 2000);
         }
 
         @Test
         void getYearOfBirth () {
-            assertEquals(1000, 3000);
+            assertEquals((short) 2000);
         }
 
         @Test
         void setHeight () {
-            assertEquals(3f, 8f);
+            assertEquals((short) 5f);
         }
 
         @Test
         void getHeight () {
-            assertEquals(5,6);
+            assertEquals((short) 5f);
         }
 
         @Test
         void setWeight () {
             int kg;
-            assertEquals(5, 6);
+            assertEquals((short) 56);
         }
+
+    @Test
+    void setFistName() {
+        short Fagbohun = 0;
+        assertEquals(Fagbohun);
     }
+
+    private void assertEquals(short fagbohun) {
+    }
+    @Test
+    void setGender() {
+    }
+
+    @Test
+    void getGender() {
+    }
+
+
+
+    @Test
+    void testGetHeight() {
+    }
+
+    @Test
+    void testSetWeight() {
+    }
+
+    @Test
+    void getWeight() {
+    }
+
+    @Test
+    void testSetWeight1() {
+    }
+
+    @Test
+    void getLastName() {
+    }
+}

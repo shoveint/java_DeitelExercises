@@ -4,13 +4,16 @@ import Chapter2.Height;
 
 public class HealthRecord {
     private String fistName;
-    private String lastName;
+    private final String lastName;
     private String gender;
     private int monthOfBirth;
     private int dayOfBirth;
     private int yearOfBirth;
-    private Height height;
-    private int weight;
+    private String weight;
+
+    public HealthRecord(String lastName) {
+        this.lastName = lastName;
+    }
 
     public void setFistName(String fistName){
         this.fistName = fistName;
@@ -45,18 +48,29 @@ public class HealthRecord {
     }
     public int getYearOfBirth(){return yearOfBirth; }
     public int setHeight(int weight){
-        this.weight = weight;
+        this.weight = String.valueOf(weight);
         return weight;
     }
     public Height getHeight(){
-        height = new Height();
+        Height height = new Height();
 
         return height;
     }
     public int setWeight(int weight){
-        this.weight = weight;
+        this.weight = String.valueOf(weight);
         return weight;
     }
 
 
+    public String getWeight() {
+        return weight;
+    }
+
+    public void setWeight(String weight) {
+        this.weight = weight;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
 }

@@ -1,4 +1,4 @@
-package tdd;
+package Assignments;
 
 import java.util.Scanner;
 
@@ -19,8 +19,9 @@ public class Nokia3310 {
                     press 8. CLOCK      
                               
                     """);
-            int Menu = input.nextInt();
-            switch (Menu) {
+            int Menu1 = input.nextInt();
+            System.out.println("Press 99 to return back menu");
+            switch (Menu1) {
                 case 1 -> {
                     System.out.println("""
                                 1. PHONE BOOK

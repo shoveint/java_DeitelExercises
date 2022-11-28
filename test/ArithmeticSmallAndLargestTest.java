@@ -11,7 +11,6 @@ public class ArithmeticSmallAndLargestTest {
     }
     @BeforeEach
     public void startAllTestWith(){
-
         arithmeticSmallAndLargest = new ArithmeticSmallAndLargest();
     }
 
